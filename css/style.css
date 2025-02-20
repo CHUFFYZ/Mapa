@@ -1,0 +1,67 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Color de fondo para mejor visibilidad */
+    font-family: 'Roboto', sans-serif; 
+  }
+  
+  #header {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff; /* Fondo blanco */
+    /*border-bottom: 2px solid #000; /* Borde inferior negro */
+    box-sizing: border-box;
+    position: fixed; /* Fijar el encabezado en la parte superior de la página */
+    top: 0;
+    left: 0;
+    z-index: 3;
+   
+  }
+  
+  #logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 25px;
+  }
+  
+  #logo {
+    height: 50px; /* Ajusta el tamaño del logo según tus necesidades */
+  }
+  
+  #title-container {
+    flex: 50;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  #title-container h1 {
+    margin: 0;
+  }
+  
+  #map-container {
+ position: absolute;
+  top: 100px; /* Desplazar hacia abajo para dejar espacio al encabezado */
+  left: 10%;
+  right: 10%;
+  bottom: 10%;
+  border: 2px solid #0000001c; /* Borde negro */
+  border-radius: 25px;
+  box-sizing: border-box; /* Incluir el borde en el tamaño total del contenedor */
+  overflow: hidden; /* Ocultar contenido fuera del contenedor */
+  }
+  
+  #map {
+    height: 100%;
+    width: 100%;
+  }
+  
+/* CSS para ocultar la marca de agua de Leaflet */
+.leaflet-control-attribution {
+    display: none;
+  }
