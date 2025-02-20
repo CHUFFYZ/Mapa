@@ -8,16 +8,14 @@ html, body {
   
   #header {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: #ffffff; /* Fondo blanco */
     /*border-bottom: 2px solid #000; /* Borde inferior negro */
     box-sizing: border-box;
     position: fixed; /* Fijar el encabezado en la parte superior de la página */
-    top: 0;
-    left: 0;
     z-index: 3;
    
   }
@@ -49,7 +47,7 @@ html, body {
   top: 100px; /* Desplazar hacia abajo para dejar espacio al encabezado */
   left: 10%;
   right: 10%;
-  bottom: 10%;
+  bottom: 100px;
   border: 2px solid #0000001c; /* Borde negro */
   border-radius: 25px;
   box-sizing: border-box; /* Incluir el borde en el tamaño total del contenedor */
@@ -64,4 +62,37 @@ html, body {
 /* CSS para ocultar la marca de agua de Leaflet */
 .leaflet-control-attribution {
     display: none;
+  }
+
+
+
+  #ia {
+    width: 100%;
+    padding: 2px;
+    display:flex;
+    justify-content: center;
+    align-items:start;
+    background-color: #7777773f; /* Fondo blanco */
+    box-sizing: border-box;
+    position: fixed; /* Fijar el footer en la parte inferior de la página */
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+ 
+
+ #logoIA {
+    border-radius: 25px;
+    margin-left: 20px;
+  }
+
+  #texto h2{
+  font-size: 124x;
+}
+.btn{
+  color: #001f3fc2;
+}
+  #logo1 {
+    height: 70px; /* Ajusta el tamaño del logo según tus necesidades */
   }
