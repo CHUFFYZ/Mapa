@@ -13,36 +13,37 @@ html, body {
     justify-content: center;
     align-items: center;
     background-color: #ffffff; /* Fondo blanco */
-    /*border-bottom: 2px solid #000; /* Borde inferior negro */
     box-sizing: border-box;
     position: fixed; /* Fijar el encabezado en la parte superior de la página */
     z-index: 3;
-   
-  }
-  
-  #logo-container {
+}
+
+#logo-container {
+    position: absolute;
+    left: 12px; /* Ajusta según sea necesario */
     margin: 0;
-  }
-  
-  #logo {
-    height: 55px; /* Ajusta el tamaño del logo según tus necesidades */
-  }
-  
-  #title-container {
-    flex: 50;
+}
+
+#logo {
+    height: 60px; /* Ajusta el tamaño del logo según tus necesidades */
+}
+
+#title-container {
+    flex-grow: 1;
     display: flex;
     justify-content: center;
-    
-  }
-  
-  #title-container h1 {
+    position: relative;
+}
+
+#title-container h1 {
     margin: 0;
     font-size: 40px;
-  }
+}
+
   
   #map-container {
  position: absolute;
-  top: 100px; /* Desplazar hacia abajo para dejar espacio al encabezado */
+  top: 85px; /* Desplazar hacia abajo para dejar espacio al encabezado */
   left: 20px;
   right: 20px;
   bottom: 100px;
@@ -63,34 +64,50 @@ html, body {
   }
 
 
-
   #ia {
     width: 100%;
-    padding: 2px;
-    display:flex;
+    padding: 0px;
+    display: flex;
     justify-content: center;
-    align-items:start;
-    background-color: #7777773f; /* Fondo blanco */
+    align-items: start;
+    background-color: #7777773f;
     box-sizing: border-box;
-    position: fixed; /* Fijar el footer en la parte inferior de la página */
+    position: fixed;
     bottom: 0;
     left: 0;
     z-index: 1000;
-  }
-  
- 
-
- #logoIA {
-    border-radius: 25px;
-    margin-left: 20px;
-  }
-
-  #texto h2{
-  font-size: 124x;
 }
-.btn{
-  color: #001f3fc2;
+
+#contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinea el contenido al centro */
+    margin-left: 80px;
 }
-  #logo1 {
-    height: 70px; /* Ajusta el tamaño del logo según tus necesidades */
-  }
+
+#texto h2 {
+    font-size: 24px;
+}
+
+#FCI{
+  margin-top:-25px;
+}
+
+#FCI h2 {
+    font-size: 15px;
+}
+
+#logoIA {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.btn {
+    color: #001f3fc2;
+}
+
+#logo1 {
+    height: 70px;
+}
