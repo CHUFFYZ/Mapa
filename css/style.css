@@ -94,13 +94,13 @@ html, body {
 }
 
 #FCI h2 {
-    font-size: 15px;
+    font-size: 12px;
 }
 
 #logoIA {
     display: flex;
     align-items: center;
-    margin-left: 10px;
+    margin-left: 18px;
     margin-top: 10px;
 }
 
