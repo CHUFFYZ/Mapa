@@ -43,7 +43,7 @@ html, body {
   
   #map-container {
  position: absolute;
-  top: 85px; /* Desplazar hacia abajo para dejar espacio al encabezado */
+  top: 90px; /* Desplazar hacia abajo para dejar espacio al encabezado */
   left: 20px;
   right: 20px;
   bottom: 100px;
